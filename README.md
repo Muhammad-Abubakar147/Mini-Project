@@ -35,3 +35,14 @@ Contribute to open-source
 Explore AI & ML concepts
 
 # 🛠 Technologies Used
+<br>
+Python
+<br>
+HTML
+CSS
+JavaScript
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
+TensorFlow
