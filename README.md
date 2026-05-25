@@ -17,3 +17,5 @@ Web Development Projects
 Automation Scripts
 <br>
 GUI Applications
+<br>
+Each project is organized in separate folders with clean code and beginner-friendly structure.
