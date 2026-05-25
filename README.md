@@ -59,6 +59,7 @@ Problem Solving
 Frontend Development
 <br>
 Backend Basics
+<br>
 AI & Machine Learning
 NLP Fundamentals
 Git & GitHub Workflow
