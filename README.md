@@ -9,3 +9,7 @@ This repository contains multiple mini projects including:
 Python Projects
 <br>
 AI & Machine Learning Projects
+<br>
+NLP Projects
+<br>
+Web Development Projects
