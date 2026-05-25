@@ -4,3 +4,4 @@ A collection of beginner to advanced mini projects built using Python, AI/ML, We
 This repository is created to improve programming skills, build real-world projects, and practice modern development tools.
 
 # 📌 About This Repository
+This repository contains multiple mini projects including:
