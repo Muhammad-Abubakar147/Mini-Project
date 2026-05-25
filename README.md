@@ -52,3 +52,13 @@ Scikit-learn
 <br>
 TensorFlow
 <br>
+
+# 📈 Skills You Will Learn
+Problem Solving
+<br>
+Frontend Development
+Backend Basics
+AI & Machine Learning
+NLP Fundamentals
+Git & GitHub Workflow
+Project Building
