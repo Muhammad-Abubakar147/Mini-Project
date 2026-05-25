@@ -63,5 +63,6 @@ Backend Basics
 AI & Machine Learning
 <br>
 NLP Fundamentals
+<br>
 Git & GitHub Workflow
 Project Building
