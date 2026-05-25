@@ -31,4 +31,5 @@ Learn project structure
 Build portfolio projects
 <br>
 Contribute to open-source
+
 Explore AI & ML concepts
