@@ -33,3 +33,5 @@ Build portfolio projects
 Contribute to open-source
 
 Explore AI & ML concepts
+
+# 🛠 Technologies Used
