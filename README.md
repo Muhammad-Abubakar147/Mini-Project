@@ -5,3 +5,4 @@ This repository is created to improve programming skills, build real-world proje
 
 # 📌 About This Repository
 This repository contains multiple mini projects including:
+Python Projects
