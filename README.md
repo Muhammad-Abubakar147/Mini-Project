@@ -28,3 +28,7 @@ Practice real-world development
 <br>
 Learn project structure
 <br>
+Build portfolio projects
+<br>
+Contribute to open-source
+Explore AI & ML concepts
