@@ -19,3 +19,5 @@ Automation Scripts
 GUI Applications
 <br>
 Each project is organized in separate folders with clean code and beginner-friendly structure.
+
+# 🎯 Goals
