@@ -13,3 +13,7 @@ AI & Machine Learning Projects
 NLP Projects
 <br>
 Web Development Projects
+<br>
+Automation Scripts
+<br>
+GUI Applications
