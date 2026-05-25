@@ -45,6 +45,10 @@ CSS
 NumPy
 <br>
 Pandas
+<br>
 Matplotlib
+<br>
 Scikit-learn
+<br>
 TensorFlow
+<br>
