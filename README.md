@@ -21,3 +21,10 @@ GUI Applications
 Each project is organized in separate folders with clean code and beginner-friendly structure.
 
 # 🎯 Goals
+<br>
+Improve coding skills
+<br>
+Practice real-world development
+<br>
+Learn project structure
+<br>
