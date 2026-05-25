@@ -65,3 +65,10 @@ AI & Machine Learning
 NLP Fundamentals
 <br>
 Project Building
+
+# 🌟 Support
+
+If you like this repository:
+
+⭐ Star the repo
+
