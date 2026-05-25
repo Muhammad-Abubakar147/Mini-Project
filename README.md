@@ -39,9 +39,11 @@ Explore AI & ML concepts
 Python
 <br>
 HTML
+<br>
 CSS
-JavaScript
+<br>
 NumPy
+<br>
 Pandas
 Matplotlib
 Scikit-learn
