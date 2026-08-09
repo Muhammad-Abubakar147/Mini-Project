@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>99 Names of Allah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background:
+                radial-gradient(circle at top, #123c3a 0%, #071b1a 35%, #020909 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Decorative glow */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 450px;
+            height: 450px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 50%;
+            filter: blur(100px);
+            top: -150px;
+            left: -150px;
+            z-index: -1;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: rgba(0, 200, 180, 0.06);
+            border-radius: 50%;
+            filter: blur(100px);
+            right: -150px;
+            bottom: -150px;
+            z-index: -1;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .bismillah {
+            font-size: 25px;
+            color: #d4af37;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        header h1 {
+            font-size: clamp(42px, 7vw, 75px);
+            font-family: Georgia, serif;
+            background: linear-gradient(
+                90deg,
+                #f8e7a1,
+                #d4af37,
+                #fff4bd
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        header h2 {
+            font-size: 38px;
+            font-weight: 400;
+            color: #f5e7b2;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: auto;
+            color: #b9c9c7;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* Divider */
+        .divider {
+            width: 180px;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #d4af37,
+                transparent
+            );
+            margin: 30px auto;
+        }
+
+        /* Counter */
+        .counter {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 30px;
+            color: #e5c75b;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Grid */
+        .names-container {
+            width: min(1250px, 92%);
+            margin: 30px auto 80px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        /* Card */
+        .name-card {
+            position: relative;
+            padding: 28px 22px;
+            min-height: 230px;
+
+            background: rgba(255, 255, 255, 0.055);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            border-radius: 20px;
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            text-align: center;
+
+            transition:
+                transform 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+        }
+
+        .name-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(212, 175, 55, 0.7);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(212, 175, 55, 0.08);
+        }
+
+        /* Number */
+        .number {
+            position: absolute;
+            top: 15px;
+            left: 18px;
+
+            width: 32px;
+            height: 32px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            font-size: 12px;
+            color: #d4af37;
+
+            border: 1px solid rgba(212, 175, 55, 0.35);
+        }
+
+        /* Arabic */
+        .arabic {
+            font-family: "Times New Roman", serif;
+            font-size: 42px;
+            direction: rtl;
+
+            color: #f5df8a;
+
+            margin: 25px 0 12px;
+
+            text-shadow:
+                0 0 15px rgba(212, 175, 55, 0.15);
+        }
+
+        /* Transliteration */
+        .transliteration {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        /* Meaning */
+        .meaning {
+            color: #aebdbb;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            color: #849492;
+        }
+
+        footer .heart {
+            color: #d4af37;
+            font-size: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+
+            header {
+                padding-top: 55px;
+            }
+
+            header h2 {
+                font-size: 28px;
+            }
+
+            .bismillah {
+                font-size: 20px;
+            }
+
+            .names-container {
+                grid-template-columns: 1fr;
+            }
+
+            .name-card {
+                min-height: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="bismillah">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+        </div>
+
+        <h1>99 Names-Asma Ul Husna</h1>
+
+        <h2>أَسْمَاءُ اللَّهِ الْحُسْنَى</h2>
+
+        <div class="divider"></div>
+
+        <p>
+            Explore the beautiful names of Allah, each reflecting
+            His perfect attributes, mercy, wisdom and greatness.
+        </p>
+
+        <div class="counter">
+            ✦ The 99 Beautiful Names of Allah ✦
+        </div>
+
+    </header>
+
+
+    <main class="names-container">
+
+        <div class="name-card">
+            <span class="number">01</span>
+            <div class="arabic">الرَّحْمَنُ</div>
+            <div class="transliteration">Ar-Rahman</div>
+            <div class="meaning">The Most Merciful</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">02</span>
+            <div class="arabic">الرَّحِيمُ</div>
+            <div class="transliteration">Ar-Raheem</div>
+            <div class="meaning">The Most Compassionate</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">03</span>
+            <div class="arabic">الْمَلِكُ</div>
+            <div class="transliteration">Al-Malik</div>
+            <div class="meaning">The King</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">04</span>
+            <div class="arabic">الْقُدُّوسُ</div>
+            <div class="transliteration">Al-Quddus</div>
+            <div class="meaning">The Most Holy</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">05</span>
+            <div class="arabic">السَّلَامُ</div>
+            <div class="transliteration">As-Salam</div>
+            <div class="meaning">The Source of Peace</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">06</span>
+            <div class="arabic">الْمُؤْمِنُ</div>
+            <div class="transliteration">Al-Mu'min</div>
+            <div class="meaning">The Giver of Faith and Security</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">07</span>
+            <div class="arabic">الْمُهَيْمِنُ</div>
+            <div class="transliteration">Al-Muhaymin</div>
+            <div class="meaning">The Guardian</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">08</span>
+            <div class="arabic">الْعَزِيزُ</div>
+            <div class="transliteration">Al-Aziz</div>
+            <div class="meaning">The Almighty</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">09</span>
+            <div class="arabic">الْجَبَّارُ</div>
+            <div class="transliteration">Al-Jabbar</div>
+            <div class="meaning">The Compeller</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">10</span>
+            <div class="arabic">الْمُتَكَبِّرُ</div>
+            <div class="transliteration">Al-Mutakabbir</div>
+            <div class="meaning">The Supreme</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">11</span>
+            <div class="arabic">الْخَالِقُ</div>
+            <div class="transliteration">Al-Khaliq</div>
+            <div class="meaning">The Creator</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">12</span>
+            <div class="arabic">الْبَارِئُ</div>
+            <div class="transliteration">Al-Bari</div>
+            <div class="meaning">The Originator</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">13</span>
+            <div class="arabic">الْمُصَوِّرُ</div>
+            <div class="transliteration">Al-Musawwir</div>
+            <div class="meaning">The Fashioner</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">14</span>
+            <div class="arabic">الْغَفَّارُ</div>
+            <div class="transliteration">Al-Ghaffar</div>
+            <div class="meaning">The Ever-Forgiving</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">15</span>
+            <div class="arabic">الْقَهَّارُ</div>
+            <div class="transliteration">Al-Qahhar</div>
+            <div class="meaning">The Subduer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">16</span>
+            <div class="arabic">الْوَهَّابُ</div>
+            <div class="transliteration">Al-Wahhab</div>
+            <div class="meaning">The Bestower</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">17</span>
+            <div class="arabic">الرَّزَّاقُ</div>
+            <div class="transliteration">Ar-Razzaq</div>
+            <div class="meaning">The Provider</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">18</span>
+            <div class="arabic">الْفَتَّاحُ</div>
+            <div class="transliteration">Al-Fattah</div>
+            <div class="meaning">The Opener</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">19</span>
+            <div class="arabic">الْعَلِيمُ</div>
+            <div class="transliteration">Al-Alim</div>
+            <div class="meaning">The All-Knowing</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">20</span>
+            <div class="arabic">الْقَابِضُ</div>
+            <div class="transliteration">Al-Qabid</div>
+            <div class="meaning">The Withholder</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">21</span>
+            <div class="arabic">الْبَاسِطُ</div>
+            <div class="transliteration">Al-Basit</div>
+            <div class="meaning">The Expander</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">22</span>
+            <div class="arabic">الْخَافِضُ</div>
+            <div class="transliteration">Al-Khafid</div>
+            <div class="meaning">The Abaser</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">23</span>
+            <div class="arabic">الرَّافِعُ</div>
+            <div class="transliteration">Ar-Rafi</div>
+            <div class="meaning">The Exalter</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">24</span>
+            <div class="arabic">الْمُعِزُّ</div>
+            <div class="transliteration">Al-Mu'izz</div>
+            <div class="meaning">The Honourer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">25</span>
+            <div class="arabic">المُذِلُّ</div>
+            <div class="transliteration">Al-Mudhill</div>
+            <div class="meaning">The Humiliator</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">26</span>
+            <div class="arabic">السَّمِيعُ</div>
+            <div class="transliteration">As-Sami</div>
+            <div class="meaning">The All-Hearing</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">27</span>
+            <div class="arabic">الْبَصِيرُ</div>
+            <div class="transliteration">Al-Basir</div>
+            <div class="meaning">The All-Seeing</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">28</span>
+            <div class="arabic">الْحَكَمُ</div>
+            <div class="transliteration">Al-Hakam</div>
+            <div class="meaning">The Judge</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">29</span>
+            <div class="arabic">الْعَدْلُ</div>
+            <div class="transliteration">Al-Adl</div>
+            <div class="meaning">The Utterly Just</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">30</span>
+            <div class="arabic">اللَّطِيفُ</div>
+            <div class="transliteration">Al-Latif</div>
+            <div class="meaning">The Most Gentle</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">31</span>
+            <div class="arabic">الْخَبِيرُ</div>
+            <div class="transliteration">Al-Khabir</div>
+            <div class="meaning">The All-Aware</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">32</span>
+            <div class="arabic">الْحَلِيمُ</div>
+            <div class="transliteration">Al-Halim</div>
+            <div class="meaning">The Most Forbearing</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">33</span>
+            <div class="arabic">الْعَظِيمُ</div>
+            <div class="transliteration">Al-Azim</div>
+            <div class="meaning">The Magnificent</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">34</span>
+            <div class="arabic">الْغَفُورُ</div>
+            <div class="transliteration">Al-Ghafur</div>
+            <div class="meaning">The Forgiving</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">35</span>
+            <div class="arabic">الشَّكُورُ</div>
+            <div class="transliteration">Ash-Shakur</div>
+            <div class="meaning">The Appreciative</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">36</span>
+            <div class="arabic">الْعَلِيُّ</div>
+            <div class="transliteration">Al-Ali</div>
+            <div class="meaning">The Most High</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">37</span>
+            <div class="arabic">الْكَبِيرُ</div>
+            <div class="transliteration">Al-Kabir</div>
+            <div class="meaning">The Most Great</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">38</span>
+            <div class="arabic">الْحَفِيظُ</div>
+            <div class="transliteration">Al-Hafiz</div>
+            <div class="meaning">The Preserver</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">39</span>
+            <div class="arabic">المُقِيتُ</div>
+            <div class="transliteration">Al-Muqit</div>
+            <div class="meaning">The Sustainer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">40</span>
+            <div class="arabic">الْحسِيبُ</div>
+            <div class="transliteration">Al-Hasib</div>
+            <div class="meaning">The Reckoner</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">41</span>
+            <div class="arabic">الْجَلِيلُ</div>
+            <div class="transliteration">Al-Jalil</div>
+            <div class="meaning">The Majestic</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">42</span>
+            <div class="arabic">الْكَرِيمُ</div>
+            <div class="transliteration">Al-Karim</div>
+            <div class="meaning">The Most Generous</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">43</span>
+            <div class="arabic">الرَّقِيبُ</div>
+            <div class="transliteration">Ar-Raqib</div>
+            <div class="meaning">The Watchful</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">44</span>
+            <div class="arabic">الْمُجِيبُ</div>
+            <div class="transliteration">Al-Mujib</div>
+            <div class="meaning">The Responsive</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">45</span>
+            <div class="arabic">الْوَاسِعُ</div>
+            <div class="transliteration">Al-Wasi</div>
+            <div class="meaning">The All-Encompassing</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">46</span>
+            <div class="arabic">الْحَكِيمُ</div>
+            <div class="transliteration">Al-Hakim</div>
+            <div class="meaning">The All-Wise</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">47</span>
+            <div class="arabic">الْوَدُودُ</div>
+            <div class="transliteration">Al-Wadud</div>
+            <div class="meaning">The Most Loving</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">48</span>
+            <div class="arabic">الْمَجِيدُ</div>
+            <div class="transliteration">Al-Majid</div>
+            <div class="meaning">The Glorious</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">49</span>
+            <div class="arabic">الْبَاعِثُ</div>
+            <div class="transliteration">Al-Ba'ith</div>
+            <div class="meaning">The Resurrector</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">50</span>
+            <div class="arabic">الشَّهِيدُ</div>
+            <div class="transliteration">Ash-Shahid</div>
+            <div class="meaning">The Witness</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">51</span>
+            <div class="arabic">الْحَقُّ</div>
+            <div class="transliteration">Al-Haqq</div>
+            <div class="meaning">The Truth</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">52</span>
+            <div class="arabic">الْوَكِيلُ</div>
+            <div class="transliteration">Al-Wakil</div>
+            <div class="meaning">The Trustee</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">53</span>
+            <div class="arabic">الْقَوِيُّ</div>
+            <div class="transliteration">Al-Qawiyy</div>
+            <div class="meaning">The All-Strong</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">54</span>
+            <div class="arabic">الْمَتِينُ</div>
+            <div class="transliteration">Al-Matin</div>
+            <div class="meaning">The Firm</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">55</span>
+            <div class="arabic">الْوَلِيُّ</div>
+            <div class="transliteration">Al-Wali</div>
+            <div class="meaning">The Protecting Friend</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">56</span>
+            <div class="arabic">الْحَمِيدُ</div>
+            <div class="transliteration">Al-Hamid</div>
+            <div class="meaning">The Praiseworthy</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">57</span>
+            <div class="arabic">الْمُحْصِي</div>
+            <div class="transliteration">Al-Muhsi</div>
+            <div class="meaning">The Counter</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">58</span>
+            <div class="arabic">الْمُبْدِئُ</div>
+            <div class="transliteration">Al-Mubdi</div>
+            <div class="meaning">The Originator</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">59</span>
+            <div class="arabic">الْمُعِيدُ</div>
+            <div class="transliteration">Al-Muid</div>
+            <div class="meaning">The Restorer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">60</span>
+            <div class="arabic">الْمُحْيِي</div>
+            <div class="transliteration">Al-Muhyi</div>
+            <div class="meaning">The Giver of Life</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">61</span>
+            <div class="arabic">الْمُمِيتُ</div>
+            <div class="transliteration">Al-Mumit</div>
+            <div class="meaning">The Bringer of Death</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">62</span>
+            <div class="arabic">الْحَيُّ</div>
+            <div class="transliteration">Al-Hayy</div>
+            <div class="meaning">The Ever-Living</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">63</span>
+            <div class="arabic">الْقَيُّومُ</div>
+            <div class="transliteration">Al-Qayyum</div>
+            <div class="meaning">The Self-Sustaining</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">64</span>
+            <div class="arabic">الْوَاجِدُ</div>
+            <div class="transliteration">Al-Wajid</div>
+            <div class="meaning">The Finder</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">65</span>
+            <div class="arabic">الْمَاجِدُ</div>
+            <div class="transliteration">Al-Majid</div>
+            <div class="meaning">The Noble</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">66</span>
+            <div class="arabic">الْوَاحِدُ</div>
+            <div class="transliteration">Al-Wahid</div>
+            <div class="meaning">The One</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">67</span>
+            <div class="arabic">الْأَحَدُ</div>
+            <div class="transliteration">Al-Ahad</div>
+            <div class="meaning">The Unique One</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">68</span>
+            <div class="arabic">الصَّمَدُ</div>
+            <div class="transliteration">As-Samad</div>
+            <div class="meaning">The Eternal Refuge</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">69</span>
+            <div class="arabic">الْقَادِرُ</div>
+            <div class="transliteration">Al-Qadir</div>
+            <div class="meaning">The Capable</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">70</span>
+            <div class="arabic">الْمُقْتَدِرُ</div>
+            <div class="transliteration">Al-Muqtadir</div>
+            <div class="meaning">The Powerful</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">71</span>
+            <div class="arabic">الْمُقَدِّمُ</div>
+            <div class="transliteration">Al-Muqaddim</div>
+            <div class="meaning">The Expediter</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">72</span>
+            <div class="arabic">الْمُؤَخِّرُ</div>
+            <div class="transliteration">Al-Mu'akhkhir</div>
+            <div class="meaning">The Delayer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">73</span>
+            <div class="arabic">الْأَوَّلُ</div>
+            <div class="transliteration">Al-Awwal</div>
+            <div class="meaning">The First</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">74</span>
+            <div class="arabic">الْآخِرُ</div>
+            <div class="transliteration">Al-Akhir</div>
+            <div class="meaning">The Last</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">75</span>
+            <div class="arabic">الظَّاهِرُ</div>
+            <div class="transliteration">Az-Zahir</div>
+            <div class="meaning">The Manifest</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">76</span>
+            <div class="arabic">الْبَاطِنُ</div>
+            <div class="transliteration">Al-Batin</div>
+            <div class="meaning">The Hidden</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">77</span>
+            <div class="arabic">الْوَالِي</div>
+            <div class="transliteration">Al-Wali</div>
+            <div class="meaning">The Governor</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">78</span>
+            <div class="arabic">الْمُتَعَالِي</div>
+            <div class="transliteration">Al-Muta'ali</div>
+            <div class="meaning">The Most Exalted</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">79</span>
+            <div class="arabic">الْبَرُّ</div>
+            <div class="transliteration">Al-Barr</div>
+            <div class="meaning">The Source of Goodness</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">80</span>
+            <div class="arabic">التَّوَابُ</div>
+            <div class="transliteration">At-Tawwab</div>
+            <div class="meaning">The Accepter of Repentance</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">81</span>
+            <div class="arabic">الْمُنْتَقِمُ</div>
+            <div class="transliteration">Al-Muntaqim</div>
+            <div class="meaning">The Avenger</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">82</span>
+            <div class="arabic">الْعَفُوُّ</div>
+            <div class="transliteration">Al-Afuww</div>
+            <div class="meaning">The Pardoner</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">83</span>
+            <div class="arabic">الرَّؤُوفُ</div>
+            <div class="transliteration">Ar-Ra'uf</div>
+            <div class="meaning">The Most Kind</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">84</span>
+            <div class="arabic">مَالِكُ الْمُلْكِ</div>
+            <div class="transliteration">Malik-ul-Mulk</div>
+            <div class="meaning">Owner of All Sovereignty</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">85</span>
+            <div class="arabic">ذُو الْجَلَالِ وَالْإِكْرَامِ</div>
+            <div class="transliteration">Dhul-Jalali wal-Ikram</div>
+            <div class="meaning">Lord of Majesty and Honor</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">86</span>
+            <div class="arabic">الْمُقْسِطُ</div>
+            <div class="transliteration">Al-Muqsit</div>
+            <div class="meaning">The Equitable</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">87</span>
+            <div class="arabic">الْجَامِعُ</div>
+            <div class="transliteration">Al-Jami</div>
+            <div class="meaning">The Gatherer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">88</span>
+            <div class="arabic">الْغَنِيُّ</div>
+            <div class="transliteration">Al-Ghani</div>
+            <div class="meaning">The Self-Sufficient</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">89</span>
+            <div class="arabic">الْمُغْنِي</div>
+            <div class="transliteration">Al-Mughni</div>
+            <div class="meaning">The Enricher</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">90</span>
+            <div class="arabic">الْمَانِعُ</div>
+            <div class="transliteration">Al-Mani</div>
+            <div class="meaning">The Preventer</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">91</span>
+            <div class="arabic">الضَّارُّ</div>
+            <div class="transliteration">Ad-Darr</div>
+            <div class="meaning">The One Who Can Cause Harm</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">92</span>
+            <div class="arabic">النَّافِعُ</div>
+            <div class="transliteration">An-Nafi</div>
+            <div class="meaning">The Benefactor</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">93</span>
+            <div class="arabic">النُّورُ</div>
+            <div class="transliteration">An-Nur</div>
+            <div class="meaning">The Light</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">94</span>
+            <div class="arabic">الْهَادِي</div>
+            <div class="transliteration">Al-Hadi</div>
+            <div class="meaning">The Guide</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">95</span>
+            <div class="arabic">الْبَدِيعُ</div>
+            <div class="transliteration">Al-Badi</div>
+            <div class="meaning">The Incomparable Originator</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">96</span>
+            <div class="arabic">الْبَاقِي</div>
+            <div class="transliteration">Al-Baqi</div>
+            <div class="meaning">The Everlasting</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">97</span>
+            <div class="arabic">الْوَارِثُ</div>
+            <div class="transliteration">Al-Warith</div>
+            <div class="meaning">The Inheritor</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">98</span>
+            <div class="arabic">الرَّشِيدُ</div>
+            <div class="transliteration">Ar-Rashid</div>
+            <div class="meaning">The Guide to the Right Path</div>
+        </div>
+
+        <div class="name-card">
+            <span class="number">99</span>
+            <div class="arabic">الصَّبُورُ</div>
+            <div class="transliteration">As-Sabur</div>
+            <div class="meaning">The Most Patient</div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Made with <span class="heart">♥</span> for remembering Allah
+        </p>
+    </footer>
+
+</body>
+</html>
