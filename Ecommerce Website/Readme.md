@@ -13,3 +13,12 @@
 </p>
 
 ---
+## 🖼️ About the Project
+
+**Ibbi's Collection** is a modern and elegant e-commerce website designed for showcasing and selling fashion and lifestyle products online.
+
+The website focuses on a premium shopping experience with a clean interface, attractive product presentation, responsive layouts, and interactive shopping features.
+
+> **Ibbi's Collection — Style That Defines You.**
+
+---
