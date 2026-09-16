@@ -8,3 +8,8 @@
   <img src="https://img.shields.io/badge/Responsive-Design-success?style=for-the-badge" alt="Responsive">
 </p>
 
+<p align="center">
+  <strong>✨ Elegant • Modern • Responsive • Limited Edition ✨</strong>
+</p>
+
+---
