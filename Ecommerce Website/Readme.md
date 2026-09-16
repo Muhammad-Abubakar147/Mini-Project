@@ -22,3 +22,23 @@ The website focuses on a premium shopping experience with a clean interface, att
 > **Ibbi's Collection — Style That Defines You.**
 
 ---
+## ✨ Features
+
+- 🛍️ Modern e-commerce interface
+- 🎨 Elegant and premium UI design
+- 📱 Fully responsive design
+- 🖼️ High-quality product images
+- 🛒 Add to Cart functionality
+- 🔢 Dynamic cart item counter
+- 💰 Product pricing and details
+- 🔍 Product browsing experience
+- ❤️ Wishlist-style interactions
+- 📦 Product categories
+- 📋 Product details section
+- 📱 Mobile-friendly navigation
+- ⚡ Fast and lightweight
+- 🎯 Smooth hover and transition effects
+- 🌙 Premium visual styling
+- 🔔 Interactive buttons and notifications
+
+---
