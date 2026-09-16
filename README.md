@@ -29,8 +29,65 @@ Each project helps me improve my understanding of programming, logic building, p
 
 ---
 
+## 🎯 Objectives
 
+- 🧠 Strengthen programming fundamentals
+- 💻 Practice coding through real projects
+- 🧩 Improve problem-solving skills
+- 🎨 Experiment with UI and functionality
+- 🔍 Explore new technologies
+- 📚 Apply concepts learned from courses and tutorials
+- 🚀 Build a practical project portfolio
 
+---
+
+## 🛠️ Technologies & Tools
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python,html,css,js,git,github,vscode" />
+
+</p>
+
+### Languages
+
+- 🐍 Python
+- 🌐 HTML
+- 🎨 CSS
+- ⚡ JavaScript
+
+### Tools
+
+- VS Code
+- Git
+- GitHub
+- Google Colab
+- Jupyter Notebook
+
+---
+
+## 📂 Project Structure
+
+```text
+Mini-Project/
+│
+├── 📁 Project-01/
+│   ├── README.md
+│   └── source-code
+│
+├── 📁 Project-02/
+│   ├── README.md
+│   └── source-code
+│
+├── 📁 Project-03/
+│   ├── README.md
+│   └── source-code
+│
+├── 📁 Project-04/
+│   ├── README.md
+│   └── source-code
+│
+└── 📄 README.md
 
 
 
