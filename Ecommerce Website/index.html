@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ibbi's Collection | Premium Fashion & Lifestyle by Abubakar</title>
+
+  <!-- SEO -->
+  <meta name="description" content="ibbi's Collection by Abubakar — a premium fashion and lifestyle brand offering elegant abayas, dresses, accessories and limited-edition pieces designed for timeless style.">
+  <meta name="keywords" content="ibbi's collection, abubakar, luxury fashion, abaya, dresses, accessories, limited edition, premium clothing">
+  <meta name="author" content="Abubakar">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ibbi's Collection | By Abubakar">
+  <meta property="og:description" content="Style that defines you. Discover premium, limited-edition fashion pieces from ibbi's Collection.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=80">
+
+  <!-- Favicon (inline SVG monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' fill='%231a1a1a'/%3E%3Ccircle cx='22' cy='22' r='17' fill='none' stroke='%23b8935f' stroke-width='1.5'/%3E%3Ctext x='22' y='30' text-anchor='middle' font-family='Georgia,serif' font-size='22' font-style='italic' fill='%23b8935f'%3Ei%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ TOAST CONTAINER ============ -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header" id="header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="ibbi's Collection Home">
+        <svg class="logo-icon" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <text x="22" y="30" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" font-style="italic" fill="currentColor">i</text>
+          <circle cx="35" cy="9" r="2" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-main">ibbi's</span>
+          <span class="logo-sub">Collection</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#shop" class="nav-link" data-nav>Shop</a></li>
+        <li><a href="#collections" class="nav-link" data-nav>Collections</a></li>
+        <li><a href="#new-arrivals" class="nav-link" data-nav>New Arrivals</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Open search">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistToggle" aria-label="Open wishlist">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartToggle" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Search bar (expands under navbar) -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-bar-inner">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search for products…" aria-label="Search products">
+        <button id="closeSearch" aria-label="Close search">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=80')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="badge-pill">LIMITED EDITION</span>
+        <h1 class="hero-title">Style That Defines You.</h1>
+        <p class="hero-subtitle">Discover thoughtfully selected pieces designed to bring elegance, confidence and individuality to your everyday style.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">Shop Collection</a>
+          <a href="#new-arrivals" class="btn btn-outline">Explore New Arrivals</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="why-us section">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon">✨</div>
+            <h3>Premium Quality</h3>
+            <p>Every piece is crafted with fine materials and careful attention to detail.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Reliable, quick shipping so you can enjoy your pieces sooner.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">🔒</div>
+            <h3>Secure Shopping</h3>
+            <p>A safe and seamless shopping experience from browse to checkout.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">❤️</div>
+            <h3>Carefully Selected</h3>
+            <p>Each item is hand-picked to reflect elegance and timeless style.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOP / PRODUCTS ============ -->
+    <section class="shop section" id="shop">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Our Collection</span>
+          <h2>Shop All Products</h2>
+          <p>Explore our curated selection of premium fashion & lifestyle pieces.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="shop-controls reveal">
+          <div class="filter-tabs" id="filterTabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="new">New Arrivals</button>
+            <button class="filter-btn" data-filter="dresses">Dresses</button>
+            <button class="filter-btn" data-filter="abayas">Abayas</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+            <button class="filter-btn" data-filter="bags">Bags</button>
+            <button class="filter-btn" data-filter="limited">Limited Edition</button>
+          </div>
+          <div class="sort-wrap">
+            <label for="sortSelect" class="sr-only">Sort products</label>
+            <select id="sortSelect">
+              <option value="default">Sort: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="newest">Newest First</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Grid (rendered via JS) -->
+        <div class="product-grid" id="productGrid"></div>
+        <p class="no-results" id="noResults" hidden>No products match your search.</p>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section class="new-arrivals section" id="new-arrivals">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Just In</span>
+          <h2>New Arrivals</h2>
+          <p>Fresh pieces, fresh season — be the first to wear them.</p>
+        </div>
+        <div class="product-grid" id="newArrivalsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ LIMITED EDITION BANNER ============ -->
+    <section class="limited-edition" id="collections">
+      <div class="limited-bg" style="background-image:url('https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600&q=80')"></div>
+      <div class="limited-overlay"></div>
+      <div class="limited-content reveal">
+        <span class="badge-pill light">EXCLUSIVE</span>
+        <h2>Limited Edition</h2>
+        <p>Selected pieces from ibbi's Collection are released in limited quantities — once they're gone, they're gone. Own something truly rare.</p>
+        <button class="btn btn-gold" id="exploreLimitedBtn">Explore Limited Edition</button>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80" alt="ibbi's Collection fashion studio" loading="lazy">
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag">Our Story</span>
+          <h2>ibbi's Collection <br> by Abubakar</h2>
+          <p>ibbi's Collection was born from a simple belief — that style should feel personal, elegant, and effortless. Founded by Abubakar, the brand brings together modern design and timeless craftsmanship to create pieces that speak quietly, yet confidently.</p>
+          <div class="about-points">
+            <div class="about-point">
+              <h4>Quality First</h4>
+              <p>Every fabric and finish is chosen with care, ensuring pieces that last and feel premium.</p>
+            </div>
+            <div class="about-point">
+              <h4>Timeless Style</h4>
+              <p>We design beyond trends — pieces meant to stay relevant season after season.</p>
+            </div>
+            <div class="about-point">
+              <h4>Limited by Design</h4>
+              <p>Many pieces are released in small batches, keeping every collection special and exclusive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Testimonials</span>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"The quality is beyond what I expected. Every piece feels luxurious and the fit is perfect."</p>
+            <h4>— Amina Yusuf</h4>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"ibbi's Collection has become my go-to for elegant, timeless fashion. Highly recommend!"</p>
+            <h4>— Sarah Khan</h4>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★☆</div>
+            <p>"Fast delivery and the abaya I ordered looks even better in person. Will order again."</p>
+            <h4>— Fatima Bello</h4>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"Loved the limited edition shawl — so unique. Customer service was excellent too."</p>
+            <h4>— Zainab Ahmed</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter section">
+      <div class="container newsletter-box reveal">
+        <h2>Stay in Style</h2>
+        <p>Subscribe for new arrivals, exclusive drops and limited-edition collections.</p>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" required>
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+        <p class="form-msg" id="newsletterMsg"></p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2>Contact Us</h2>
+          <p>Have a question about an order, sizing, or our collections? We'd love to hear from you.</p>
+          <ul class="contact-info">
+            <li>📍 Lagos, Nigeria</li>
+            <li>📧 hello@ibbiscollection.com</li>
+            <li>📞 +234 800 000 0000</li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <input type="text" placeholder="Your Name" required aria-label="Your name">
+          <input type="email" placeholder="Your Email" required aria-label="Your email">
+          <textarea rows="4" placeholder="Your Message" required aria-label="Your message"></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo light">
+          <svg class="logo-icon" viewBox="0 0 44 44" aria-hidden="true">
+            <circle cx="22" cy="22" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <text x="22" y="30" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" font-style="italic" fill="currentColor">i</text>
+            <circle cx="35" cy="9" r="2" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-main">ibbi's</span>
+            <span class="logo-sub">Collection</span>
+          </span>
+        </a>
+        <p>By Abubakar</p>
+        <p class="footer-tag">Elegant fashion, timeless style.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe for exclusive updates and offers.</p>
+        <form class="footer-newsletter" id="footerNewsletterForm">
+          <input type="email" placeholder="Email address" required aria-label="Email address">
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ibbi's Collection by Abubakar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-header">
+      <h3>Your Cart <span id="drawerCartCount">(0)</span></h3>
+      <button id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-msg" id="emptyCartMsg">Your cart is empty.</p>
+    </div>
+    <div class="drawer-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
+      <div class="drawer-actions">
+        <button class="link-btn" id="clearCartBtn">Clear Cart</button>
+        <button class="link-btn" id="continueShoppingBtn">Continue Shopping</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ WISHLIST DRAWER ============ -->
+  <aside class="cart-drawer wishlist-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3>Wishlist <span id="drawerWishlistCount">(0)</span></h3>
+      <button id="closeWishlist" aria-label="Close wishlist">✕</button>
+    </div>
+    <div class="cart-items" id="wishlistItems">
+      <p class="empty-msg" id="emptyWishlistMsg">Your wishlist is empty.</p>
+    </div>
+  </aside>
+
+  <!-- ============ QUICK VIEW MODAL ============ -->
+  <div class="modal-overlay" id="quickViewOverlay">
+    <div class="modal quick-view-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeQuickView" aria-label="Close quick view">✕</button>
+      <div class="quick-view-body" id="quickViewBody"><!-- populated by JS --></div>
+    </div>
+  </div>
+
+  <!-- ============ CHECKOUT MODAL ============ -->
+  <div class="modal-overlay" id="checkoutOverlay">
+    <div class="modal checkout-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeCheckout" aria-label="Close checkout">✕</button>
+      <h2>Checkout</h2>
+      <div class="checkout-grid">
+        <form id="checkoutForm" class="checkout-form" novalidate>
+          <label>Full Name
+            <input type="text" id="custName" required>
+          </label>
+          <label>Email
+            <input type="email" id="custEmail" required>
+          </label>
+          <label>Phone
+            <input type="tel" id="custPhone" required>
+          </label>
+          <label>Address
+            <input type="text" id="custAddress" required>
+          </label>
+          <label>City
+            <input type="text" id="custCity" required>
+          </label>
+          <label>Payment Method
+            <select id="custPayment" required>
+              <option value="">Select payment method</option>
+              <option value="Card on Delivery">Card on Delivery</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+          </label>
+          <p class="checkout-note">⚠️ This is a front-end demo. No real payment will be processed.</p>
+          <button type="submit" class="btn btn-primary btn-full">Place Order</button>
+        </form>
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div id="checkoutSummary" class="checkout-summary-items"></div>
+          <div class="checkout-total">
+            <span>Total</span>
+            <span id="checkoutTotal">$0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order success modal -->
+  <div class="modal-overlay" id="successOverlay">
+    <div class="modal success-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeSuccess" aria-label="Close">✕</button>
+      <div class="success-icon">✓</div>
+      <h2>Order Placed!</h2>
+      <p>Thank you for shopping with ibbi's Collection. This was a demo checkout — no payment was processed.</p>
+      <button class="btn btn-primary" id="successCloseBtn">Continue Shopping</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
