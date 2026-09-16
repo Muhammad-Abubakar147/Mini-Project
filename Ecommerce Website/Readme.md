@@ -42,3 +42,14 @@ The website focuses on a premium shopping experience with a clean interface, att
 - 🔔 Interactive buttons and notifications
 
 ---
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| 🟧 **HTML5** | Website structure |
+| 🎨 **CSS3** | Styling and responsive design |
+| 🟨 **JavaScript** | Interactivity and functionality |
+| 🖼️ **Unsplash / Product Images** | Product visuals |
+| 🔧 **Git & GitHub** | Version control |
+
+---
