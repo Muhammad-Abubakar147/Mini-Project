@@ -6,7 +6,6 @@
 <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
 <img src="https://img.shields.io/badge/Real--Time-Detection-00C853?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-<img src="https://img.shields.io/github/license/Muhammad-Abubakar147/Eyes-Face-Smile-Detection?style=for-the-badge">
 
 </p>
 <p align="center">
@@ -51,3 +50,40 @@ The project demonstrates fundamental and practical concepts of:
 | 🧠 ROI Processing | Performs feature detection inside face regions |
 
 ---
+
+## 🧠 Detection Pipeline
+
+```text
+                 ┌──────────────────┐
+                 │      Webcam      │
+                 └────────┬─────────┘
+                          ↓
+                 ┌──────────────────┐
+                 │  Capture Frame   │
+                 └────────┬─────────┘
+                          ↓
+                 ┌──────────────────┐
+                 │ Convert to Gray  │
+                 │     Scale        │
+                 └────────┬─────────┘
+                          ↓
+                 ┌──────────────────┐
+                 │  Face Detection  │
+                 └────────┬─────────┘
+                          ↓
+              ┌───────────┴───────────┐
+              ↓                       ↓
+     ┌────────────────┐       ┌────────────────┐
+     │ Eye Detection  │       │Smile Detection │
+     └───────┬────────┘       └───────┬────────┘
+             │                        │
+             └───────────┬────────────┘
+                         ↓
+                ┌──────────────────┐
+                │ Draw Bounding    │
+                │     Boxes        │
+                └────────┬─────────┘
+                         ↓
+                ┌──────────────────┐
+                │ Display Result   │
+                └──────────────────┘
