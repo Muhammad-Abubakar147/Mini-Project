@@ -25,3 +25,29 @@
 The system uses **Haar Cascade Classifiers** to detect human faces, eyes, and smiles from a live webcam stream.
 
 The project demonstrates fundamental and practical concepts of:
+
+- Computer Vision
+- Object Detection
+- Image Processing
+- Real-Time Video Processing
+- Haar Cascade Classifiers
+- Region of Interest (ROI)
+- Grayscale Image Processing
+- Bounding Box Detection
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 👤 Face Detection | Detects human faces in real time |
+| 👁️ Eye Detection | Detects eyes inside detected face regions |
+| 😄 Smile Detection | Detects smiles from facial regions |
+| 📷 Webcam Support | Uses live camera input |
+| ⚡ Real-Time Processing | Processes frames continuously |
+| 🎯 Haar Cascades | Uses pre-trained OpenCV classifiers |
+| 🖼️ Bounding Boxes | Displays detection regions visually |
+| 🧠 ROI Processing | Performs feature detection inside face regions |
+
+---
