@@ -13,3 +13,21 @@
 </p>
 
 ---
+## 📌 Overview
+
+The **Restaurant Management App** is a software application designed to simplify and organize essential restaurant operations.
+
+The application provides a centralized system for managing:
+
+- 🍔 Menu Items
+- 🧾 Customer Orders
+- 👥 Customer Information
+- 💰 Billing & Payments
+- 📊 Sales Records
+- 🪑 Table Management
+- 📦 Inventory
+- 🔐 User/Admin Operations
+
+The project demonstrates practical software development concepts including **CRUD operations, data management, application logic, user interaction, and modular programming**.
+
+---
