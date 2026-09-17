@@ -18,3 +18,10 @@
 </p>
 
 ---
+## 📌 Overview
+
+**Face, Eyes & Smile Detection** is a real-time Computer Vision project developed using **Python and OpenCV**.
+
+The system uses **Haar Cascade Classifiers** to detect human faces, eyes, and smiles from a live webcam stream.
+
+The project demonstrates fundamental and practical concepts of:
