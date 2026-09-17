@@ -31,3 +31,48 @@ The application provides a centralized system for managing:
 The project demonstrates practical software development concepts including **CRUD operations, data management, application logic, user interaction, and modular programming**.
 
 ---
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🍔 Menu Management | Add, update, delete, and view menu items |
+| 🧾 Order Management | Create and manage customer orders |
+| 👥 Customer Management | Store and manage customer information |
+| 💰 Billing System | Generate bills and calculate totals |
+| 🪑 Table Management | Manage restaurant tables and availability |
+| 📦 Inventory | Track available restaurant items |
+| 📊 Sales Management | Maintain sales and transaction records |
+| 🔍 Search | Quickly search menu items and records |
+| ✏️ Update | Modify existing records |
+| 🗑️ Delete | Remove unwanted records |
+| 📋 Records | View stored restaurant data |
+| 🔐 Admin Operations | Manage application data and operations |
+
+---
+
+## 🧠 Application Workflow
+
+```text
+                    ┌─────────────────┐
+                    │      Login      │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │    Dashboard    │
+                    └────────┬────────┘
+                             ↓
+        ┌────────────────────┼────────────────────┐
+        ↓                    ↓                    ↓
+   ┌─────────┐          ┌──────────┐         ┌─────────┐
+   │  Menu   │          │  Orders  │         │ Tables  │
+   └────┬────┘          └────┬─────┘         └────┬────┘
+        │                    │                    │
+        └────────────────────┼────────────────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │     Billing     │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │ Sales / Records │
+                    └─────────────────┘
