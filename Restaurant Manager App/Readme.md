@@ -8,3 +8,8 @@
 <img src="https://img.shields.io/badge/Management-System-6C63FF?style=for-the-badge">
 
 </p>
+<p align="center">
+  <b>A modern Restaurant Management Application for managing orders, menus, customers, billing, and daily restaurant operations.</b>
+</p>
+
+---
