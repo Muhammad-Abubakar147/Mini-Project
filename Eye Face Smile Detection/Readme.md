@@ -9,3 +9,12 @@
 <img src="https://img.shields.io/github/license/Muhammad-Abubakar147/Eyes-Face-Smile-Detection?style=for-the-badge">
 
 </p>
+<p align="center">
+  <b>Real-Time Computer Vision Project for Face, Eye & Smile Detection</b>
+</p>
+
+<p align="center">
+  Built with Python 🐍 and OpenCV 👁️
+</p>
+
+---
