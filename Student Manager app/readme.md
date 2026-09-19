@@ -41,3 +41,52 @@ The application provides a centralized platform for managing student records, in
 The project focuses on clean architecture, usability, scalability, and maintainable code.
 
 ---
+
+# ✨ Features
+
+## 👨‍🎓 Student Management
+
+- Add new students
+- View student records
+- Update student information
+- Delete student records
+- Generate unique student IDs
+- View detailed student profiles
+
+## 🔎 Search & Filtering
+
+- Search students by name
+- Search by student ID
+- Filter by class/course
+- Filter by academic status
+- Sort student records
+
+## 📚 Academic Management
+
+- Manage subjects
+- Store marks and grades
+- Track academic performance
+- Calculate averages
+- Display student results
+
+## 📝 Attendance Management
+
+- Record attendance
+- Track attendance percentage
+- View attendance history
+- Identify low-attendance students
+
+## 📊 Dashboard
+
+The dashboard provides useful statistics such as:
+
+```text
+Total Students
+      ↓
+Active Students
+      ↓
+Average Performance
+      ↓
+Attendance Statistics
+      ↓
+Course Distribution
