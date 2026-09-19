@@ -20,3 +20,24 @@
 </p>
 
 ---
+
+## 📌 Overview
+
+**Student Manager App** is a full-featured application built to manage student information in an organized, efficient, and user-friendly way.
+
+The application provides a centralized platform for managing student records, including:
+
+- 👨‍🎓 Student Profiles
+- 🆔 Student IDs
+- 📚 Courses & Subjects
+- 📊 Academic Records
+- 📝 Attendance
+- 📞 Contact Information
+- 🔍 Search & Filtering
+- ✏️ Update & Delete Operations
+- 📈 Student Statistics
+- 💾 Data Management
+
+The project focuses on clean architecture, usability, scalability, and maintainable code.
+
+---
