@@ -9,3 +9,14 @@
 <p align="center">
   <b>A modern and efficient Student Management System designed to simplify student record management, academic tracking, and administrative operations.</b>
 </p>
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
+
+---
