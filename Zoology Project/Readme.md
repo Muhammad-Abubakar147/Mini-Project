@@ -18,3 +18,25 @@
 </p>
 
 ---
+## 🧬 Project Overview
+
+**Animal Data Analysis & Biodiversity Insights** is a Zoology and Data Science project that applies computational data analysis techniques to animal-related datasets.
+
+The project combines **biological knowledge** with **Python-based data analysis** to transform raw animal records into meaningful biological and statistical insights.
+
+Instead of treating the dataset as a simple collection of rows and columns, this project approaches animal data from a **Zoological perspective**, investigating questions related to:
+
+- 🐾 Animal classification
+- 🧬 Taxonomic distribution
+- 🌍 Habitat patterns
+- 🍃 Dietary categories
+- 🦴 Physical characteristics
+- 🏃 Locomotion and lifestyle
+- 🥚 Reproductive characteristics
+- 🌿 Ecological relationships
+- 📊 Biodiversity patterns
+- 🔎 Data quality and consistency
+
+The ultimate objective is to demonstrate how **Data Science can support Zoological research and biodiversity analysis**.
+
+---
