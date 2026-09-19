@@ -9,3 +9,12 @@
   <img src="https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4C72B0?style=for-the-badge" alt="Seaborn">
 </p>
 
+<p align="center">
+  <b>From Animal Records → Data Cleaning → Exploratory Analysis → Biodiversity Insights</b>
+</p>
+
+<p align="center">
+  <i>A Zoology-focused data analysis project exploring animal characteristics, taxonomy, diversity, ecological patterns, and biological relationships through Python.</i>
+</p>
+
+---
