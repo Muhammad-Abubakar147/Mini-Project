@@ -6,3 +6,12 @@
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Project Status">
 </p>
 
+<p align="center">
+  <b>A simple, interactive, and efficient calculator application built entirely with Python.</b>
+</p>
+
+<p align="center">
+  Perform mathematical calculations using a clean and beginner-friendly Python implementation.
+</p>
+
+---
