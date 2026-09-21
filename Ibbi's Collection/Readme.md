@@ -35,3 +35,17 @@ The project is built without heavy frameworks, using only the core web technolog
 
 
 ---
+
+## 📸 Screenshots
+
+<div align="center">
+
+| Home Page | Products | Cart |
+|:---:|:---:|:---:|
+| ![Home](screenshots/home.png) | ![Products](screenshots/products.png) | ![Cart](screenshots/cart.png) |
+
+</div>
+
+*(Add your own screenshots to a `screenshots/` folder and update the file names.)*
+
+---
