@@ -91,7 +91,7 @@ ibbis-collection/
 └── README.md
 ```
 
-*(Adjust the file names to match your actual project.)*
+
 
 ---
 
