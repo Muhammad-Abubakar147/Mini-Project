@@ -110,3 +110,78 @@ You only need a modern web browser such as Chrome, Firefox, Edge or Safari. No i
 ```bash
 git clone https://github.com/Muhammad-Abubakar147/Mini-Project/tree/main/Ibbi's%20Collection
 ```
+
+**2. Open the project folder**
+
+```bash
+cd ibbis-collection
+```
+
+**3. Run the website**
+
+Simply open `index.html` in your browser:
+
+```bash
+# Windows
+start index.html
+
+# macOS
+open index.html
+
+# Linux
+xdg-open index.html
+```
+
+💡 **Tip:** For the best experience, use the **Live Server** extension in VS Code.
+
+---
+
+## 🧩 Usage
+
+1. Browse the products on the home or products page.
+2. Click **Add to Cart** on any item you like.
+3. Open the cart to review, change quantities or remove items.
+4. Proceed to checkout.
+
+---
+
+## 🎨 Customization
+
+**Change the colors** in `css/style.css`:
+
+```css
+:root {
+  --primary-color: #1a1a1a;
+  --accent-color: #c9a227;
+  --background:   #faf9f6;
+}
+```
+
+**Add a new product** in `js/script.js`:
+
+```javascript
+const products = [
+  {
+    id: 1,
+    name: "Classic Item",
+    price: 49.99,
+    image: "images/item1.jpg",
+    category: "Featured"
+  }
+  // Add more products here
+];
+```
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Responsive layout
+- [x] Shopping cart
+- [ ] User login and signup
+- [ ] Payment gateway integration
+- [ ] Wishlist feature
+- [ ] Order tracking
+- [ ] Dark mode
+
+---
