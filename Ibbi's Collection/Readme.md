@@ -196,3 +196,20 @@ Contributions, issues and feature requests are welcome!
 5. **Open** a Pull Request
 
 ---
+## 📬 Contact
+
+**Ibbi**
+
+- 📧 Email: brandmirza702@gmail.com
+- 🐙 GitHub: [Profile](https://github.com/Muhammad-Abubakar147)
+- 📸 Instagram: [Profile](https://www.instagram.com/itx_abubakar7860/)
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, give it a star!
+
+Made with ❤️ by **Abubakar**
+
+</div>
