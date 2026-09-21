@@ -94,3 +94,19 @@ ibbis-collection/
 *(Adjust the file names to match your actual project.)*
 
 ---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project on your own computer.
+
+### Prerequisites
+
+You only need a modern web browser such as Chrome, Firefox, Edge or Safari. No installation or build tools are required.
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Muhammad-Abubakar147/Mini-Project/tree/main/Ibbi's%20Collection
+```
