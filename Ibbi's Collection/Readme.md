@@ -49,3 +49,16 @@ The project is built without heavy frameworks, using only the core web technolog
 *(Add your own screenshots to a `screenshots/` folder and update the file names.)*
 
 ---
+
+## ✨ Features
+
+- 🏠 **Elegant homepage** with hero banner and featured products
+- 🛒 **Shopping cart** to add, remove and update items
+- 🔍 **Search and filter** to find products quickly
+- 🏷️ **Product categories** for easy browsing
+- 📱 **Fully responsive** design for mobile, tablet and desktop
+- ⚡ **Fast and lightweight** with no external framework required
+- 🎨 **Clean, modern UI** with smooth hover effects and transitions
+- 📞 **Contact section** for customer inquiries
+
+---
