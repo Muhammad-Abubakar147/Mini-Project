@@ -28,3 +28,10 @@ A modern, responsive e-commerce website built with **HTML**, **CSS** and **JavaS
 The project is built without heavy frameworks, using only the core web technologies, which makes it lightweight, easy to understand, and easy to customize.
 
 ---
+
+## 🌐 Live Demo
+
+> 🔗 **[View the live website](https://github.com/Muhammad-Abubakar147/Mini-Project/tree/main/Ibbi's%20Collection)**
+
+
+---
