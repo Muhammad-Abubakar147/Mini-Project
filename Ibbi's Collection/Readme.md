@@ -62,3 +62,13 @@ The project is built without heavy frameworks, using only the core web technolog
 - 📞 **Contact section** for customer inquiries
 
 ---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|------------|---------|
+| **HTML5** | Page structure and semantic markup |
+| **CSS3** | Styling, layout (Flexbox / Grid) and responsiveness |
+| **JavaScript (ES6)** | Interactivity, cart logic and dynamic content |
+
+---
