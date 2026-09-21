@@ -46,8 +46,6 @@ The project is built without heavy frameworks, using only the core web technolog
 
 </div>
 
-*(Add your own screenshots to a `screenshots/` folder and update the file names.)*
-
 ---
 
 ## ✨ Features
@@ -70,5 +68,29 @@ The project is built without heavy frameworks, using only the core web technolog
 | **HTML5** | Page structure and semantic markup |
 | **CSS3** | Styling, layout (Flexbox / Grid) and responsiveness |
 | **JavaScript (ES6)** | Interactivity, cart logic and dynamic content |
+
+---
+## 📂 Project Structure
+
+```
+ibbis-collection/
+│
+├── index.html          # Main landing page
+├── products.html       # Product listing page
+├── cart.html           # Shopping cart page
+├── contact.html        # Contact page
+│
+├── css/
+│   └── style.css       # Main stylesheet
+│
+├── js/
+│   └── script.js       # Site logic and cart functionality
+│
+├── images/             # Product images and banners
+│
+└── README.md
+```
+
+*(Adjust the file names to match your actual project.)*
 
 ---
