@@ -42,7 +42,7 @@ The project is built without heavy frameworks, using only the core web technolog
 
 | Home Page | Products | Cart |
 |:---:|:---:|:---:|
-| ![Home](screenshots/home.png) | ![Products](screenshots/products.png) | ![Cart](screenshots/cart.png) |
+| ![Home](https://github.com/Muhammad-Abubakar147/Mini-Project/blob/main/Ibbi's%20Collection/Screenshots/Screenshot%20(611).png) | ![Products](screenshots/products.png) | ![Cart](screenshots/cart.png) |
 
 </div>
 
