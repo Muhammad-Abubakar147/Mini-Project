@@ -31,7 +31,7 @@ The project is built without heavy frameworks, using only the core web technolog
 
 ## 🌐 Live Demo
 
-> 🔗 **[View the live website](https://github.com/Muhammad-Abubakar147/Mini-Project/tree/main/Ibbi's%20Collection)**
+> 🔗 **[View the live website](https://ibbis-collection.netlify.app/)**
 
 
 ---
