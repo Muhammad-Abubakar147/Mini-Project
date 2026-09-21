@@ -21,3 +21,10 @@ A modern, responsive e-commerce website built with **HTML**, **CSS** and **JavaS
 </div>
 
 ---
+## 📖 About
+
+**Ibbi's Collection** is a front-end online store where visitors can browse products, view details, and manage a shopping cart through a clean, fast and mobile-friendly interface.
+
+The project is built without heavy frameworks, using only the core web technologies, which makes it lightweight, easy to understand, and easy to customize.
+
+---
